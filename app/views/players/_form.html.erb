@@ -1,0 +1,61 @@
+<%= form_for(@player) do |f| %>
+  <% if @player.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@player.errors.count, "error") %> prohibited this player from being saved:</h2>
+
+      <ul>
+      <% @player.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Name %><br />
+    <%= f.text_field :Name %>
+  </div>
+  <div class="field">
+    <%= f.label :Teams_Played_For %><br />
+    <%= f.number_field :Teams_Played_For %>
+  </div>
+  <div class="field">
+    <%= f.label :Position %><br />
+    <%= f.text_field :Position %>
+  </div>
+  <div class="field">
+    <%= f.label :Points %><br />
+    <%= f.number_field :Points %>
+  </div>
+  <div class="field">
+    <%= f.label :Rebounds %><br />
+    <%= f.number_field :Rebounds %>
+  </div>
+  <div class="field">
+    <%= f.label :Assists %><br />
+    <%= f.number_field :Assists %>
+  </div>
+  <div class="field">
+    <%= f.label :Championships_Won %><br />
+    <%= f.number_field :Championships_Won %>
+  </div>
+  <div class="field">
+    <%= f.label :MVP_Won %><br />
+    <%= f.number_field :MVP_Won %>
+  </div>
+  <div class="field">
+    <%= f.label :Finals_MVP_Won %><br />
+    <%= f.number_field :Finals_MVP_Won %>
+  </div>
+  <div class="field">
+    <%= f.label :AllStar %><br />
+    <%= f.number_field :AllStar %>
+  </div>
+  <div class="field">
+    <%= f.label :Year_Retired %><br />
+    <%= f.number_field :Year_Retired %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

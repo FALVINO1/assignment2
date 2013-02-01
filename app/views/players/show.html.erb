@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @player.Name %>
+</p>
+
+<p>
+  <b>Teams played for:</b>
+  <%= @player.Teams_Played_For %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @player.Position %>
+</p>
+
+<p>
+  <b>Points:</b>
+  <%= @player.Points %>
+</p>
+
+<p>
+  <b>Rebounds:</b>
+  <%= @player.Rebounds %>
+</p>
+
+<p>
+  <b>Assists:</b>
+  <%= @player.Assists %>
+</p>
+
+<p>
+  <b>Championships won:</b>
+  <%= @player.Championships_Won %>
+</p>
+
+<p>
+  <b>Mvp won:</b>
+  <%= @player.MVP_Won %>
+</p>
+
+<p>
+  <b>Finals mvp won:</b>
+  <%= @player.Finals_MVP_Won %>
+</p>
+
+<p>
+  <b>Allstar:</b>
+  <%= @player.AllStar %>
+</p>
+
+<p>
+  <b>Year retired:</b>
+  <%= @player.Year_Retired %>
+</p>
+
+
+<%= link_to 'Edit', edit_player_path(@player) %> |
+<%= link_to 'Back', players_path %>

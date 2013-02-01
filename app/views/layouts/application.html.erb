@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NBA</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id = "topbanner">
+	<center>
+		<h2>
+			<%= @page_title || "Greatest NBA Players of All Time" %>
+		</h2>
+	</center>
+	<%= link_to 'Home', players_path %>
+	<%= link_to 'Search By Name', search_players_path %>
+	<%= link_to 'Add A Player', new_player_path %>
+</div>
+
+
+<%= yield %>
+
+</body>
+</html>
