@@ -15,6 +15,7 @@ class Player < ActiveRecord::Base
   validates :Year_Retired, :numericality => true
   
   def pp
-    	"#{players.Name} #{players.Points}"
+    	"#{Name} #{Points}"
   end
+  
 end

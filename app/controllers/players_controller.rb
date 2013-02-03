@@ -1,4 +1,8 @@
 class PlayersController < ApplicationController
+  def about
+  
+  end
+  
   
   def search	
   	if params[:search_text]

@@ -1,3 +1,32 @@
+body 
+	{
+	background-color: #031b12; 
+	color: #FF6633; 
+	font-family: "Arial";
+	}
+
+table 
+	
+	{
+	background-color: #FFFFFF;
+	padding:50px;
+	border:10px solid black;
+	}
+td
+	{
+	padding:5px;
+	border:1px solid black;
+	text-align:center;
+	}
+
+#topbanner 
+	{
+	height:75px;
+	width: 100%;
+	}
+
+
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
