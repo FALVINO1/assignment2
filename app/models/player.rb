@@ -1,6 +1,8 @@
 class Player < ActiveRecord::Base
   attr_accessible :AllStar, :Assists, :Championships_Won, :Finals_MVP_Won, :MVP_Won, :Name, :Points, :Position, :Rebounds, :Teams_Played_For, :Year_Retired
 
+  has_and_belongs_to_many :Team
+  has_many :championship, :dependent => :destroy
 
   validates :AllStar, :numericality => true
   validates :Assists, :presence => true

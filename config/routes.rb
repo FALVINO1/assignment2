@@ -1,5 +1,11 @@
 NBA::Application.routes.draw do
 
+  resources :championships
+
+
+  resources :teams
+
+
 root :to => 'players#index'
   resources :players do
   	collection do

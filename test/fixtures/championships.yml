@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  TeamName: MyString
+  Year: 1
+  Wins: 1
+  Loses: 1
+  Team_id: 1
+
+two:
+  TeamName: MyString
+  Year: 1
+  Wins: 1
+  Loses: 1
+  Team_id: 1
